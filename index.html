@@ -1,22 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <script src="play-game.js" defer></script>
   <link rel="stylesheet" href="style.css">
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Something creative and metaphorical</title>
+  <title>Choose Your Own Escape</title>
 </head>
 <body>
-  <div class="story-field">
+  <div class="story-field" value="">
     <header>
-      <h1>Title goes here</h1>
+      <h1 class="title">Welcome to the USSR</h1>
+      <h3 class="intro">You will take the role of one of my relatives living in the Soviet Union. Your goal is to get out,
+        and make a better, fairer life for yourself in the US. You can play as Eugene (my great uncle) or Nata (my grandmother): each chose their own path,
+        and adapted to the unique challenges they faced. What will you do?
+      </h3>
     </header>
-    <p id="intro">Welcome to the great USSR! The year is 1971, and you just turned 10 in Bielsk, Belarus, a military city of about 200 thousand near the polish border.</p>
-    <br>
-    <span class="introduce-decision">The rest is up to you...</span>
-    <button class="decision" id="eugene-start">Play As Eugene</button>
+    <div class="start-buttons">
+      <div class="start-module">
+        <button class="start" id="eugene-start">Play As Eugene</button>
+        <span class="info" id="eugene-link"><a href="about/eugene.html">About Eugene</a></span>
+      </div>
+      <div class="start-module">
+        <button class="start" id="nata-start">Play As Nata</button>
+        <span class="info" id="nata-link"><a href="about/nata.html">About Nata</a></span>
+      </div>
+    </div>
+    <span class="info" id="about-link"><a href="about" class="about-link">More About This Project And Why I Made It</a></span><br><br><br>
   </div>
+  <script src="play-game.js" defer></script>
 </body>
 </html>
