@@ -22,10 +22,12 @@ function get_story(storyId, story) {
   for (let element of document.querySelectorAll('div.choice')) {
     element.remove()
   }
+  let i = 0
   for (let idNumber of storyId) {
     story = story[idNumber]
+    i++
   }
-  return story[2]
+  return `<div id="${i}">${story[2]}</div>`
 }
 
 function play_eugene_game() {
@@ -37,17 +39,20 @@ function play_eugene_game() {
   studyChoice.addEventListener('click', function () {
     currentStoryId.push(Number(studyChoice.value))
     nextStory = get_story(currentStoryId, eugeneStories)
+    document.getElementById(`${currentStoryId.length - 1}`).style.color = 'grey'
     storyField.innerHTML += nextStory
 
     const talkChoice = document.getElementById('talk')
     talkChoice.addEventListener('click', function () {
       currentStoryId.push(Number(talkChoice.value))
       nextStory = get_story(currentStoryId, eugeneStories)
+      document.getElementById(`${currentStoryId.length - 1}`).style.color = 'grey'
       storyField.innerHTML += nextStory
       const nextButton = document.getElementById('next')
       nextButton.addEventListener('click', function () {
         currentStoryId.push(Number(nextButton.value))
         nextStory = get_story(currentStoryId, eugeneStories)
+        document.getElementById(`${currentStoryId.length - 1}`).style.color = 'grey'
         storyField.innerHTML += nextStory
       })
     })
@@ -56,11 +61,13 @@ function play_eugene_game() {
     goHomeChoice.addEventListener('click', function () {
       currentStoryId.push(Number(goHomeChoice.value))
       nextStory = get_story(currentStoryId, eugeneStories)
+      document.getElementById(`${currentStoryId.length - 1}`).style.color = 'grey'
       storyField.innerHTML += nextStory
       const nextButton = document.getElementById('next')
       nextButton.addEventListener('click', function () {
         currentStoryId.push(Number(nextButton.value))
         nextStory = get_story(currentStoryId, eugeneStories)
+        document.getElementById(`${currentStoryId.length - 1}`).style.color = 'grey'
         storyField.innerHTML += nextStory
       })
     })
@@ -70,17 +77,20 @@ function play_eugene_game() {
   playChoice.addEventListener('click', function () {
     currentStoryId.push(Number(playChoice.value))
     nextStory = get_story(currentStoryId, eugeneStories)
+    document.getElementById(`${currentStoryId.length - 1}`).style.color = 'grey'
     storyField.innerHTML += nextStory
 
     const fightChoice = document.getElementById('fight')
     fightChoice.addEventListener('click', function () {
       currentStoryId.push(Number(fightChoice.value))
       nextStory = get_story(currentStoryId, eugeneStories)
+      document.getElementById(`${currentStoryId.length - 1}`).style.color = 'grey'
       storyField.innerHTML += nextStory
       const nextButton = document.getElementById('next')
       nextButton.addEventListener('click', function () {
         currentStoryId.push(Number(nextButton.value))
         nextStory = get_story(currentStoryId, eugeneStories)
+        document.getElementById(`${currentStoryId.length - 1}`).style.color = 'grey'
         storyField.innerHTML += nextStory
       })
     })
@@ -89,11 +99,13 @@ function play_eugene_game() {
     ignoreChoice.addEventListener('click', function () {
       currentStoryId.push(Number(ignoreChoice.value))
       nextStory = get_story(currentStoryId, eugeneStories)
+      document.getElementById(`${currentStoryId.length - 1}`).style.color = 'grey'
       storyField.innerHTML += nextStory
       const nextButton = document.getElementById('next')
       nextButton.addEventListener('click', function () {
         currentStoryId.push(Number(nextButton.value))
         nextStory = get_story(currentStoryId, eugeneStories)
+        document.getElementById(`${currentStoryId.length - 1}`).style.color = 'grey'
         storyField.innerHTML += nextStory
       })
     })
