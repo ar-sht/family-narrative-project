@@ -1,14 +1,19 @@
 const htmlOr = `<span class="or"><em>or</em></span>`
-const eugeneStories = [[[[[], [], [`words`]], [], 
-`<span class="story">&emsp;&emsp;You approach the teacher about your unfair grade. She refuses to amend it, telling you that you have to follow the government methods. You go home having learned two valuable lessons: everything you do here will be dictated by the government, and it will always be harder for you as a Jew. These were the main points Eugene learned as a child, and they greatly influenced his later decisions.</span><br><div class="choice"><button class="decision" id="next" value="000">7 years later...</button></div>`], 
-[[[], [], [`words`]], [], 
-`<span class="story">&emsp;&emsp;You decide it's not worth the fight and go home, A in hand. You meet with your mom, and she tells you that she's proud of you, that you did all you could. You know she's right, but you still toss and turn that night, thinking how hard it is for you here. You set your mind on making it to a place where you can make a name for yourself and be recognized for your achievements, just as Eugene did at an early age.</span><br><div class="choice"><button class="decision" id="next" value="000">7 years later...</button></div>`], 
-`<span class="story">&emsp;&emsp;You decide to bear down and study hard to make sure you get every question right - just like Eugene did. After all, your mother often tells you, "As a Jew, you have to earn an A+ to get an A!"<br>&emsp;&emsp;Lo and behold, the day of the test comes around and you ace it. You get every answer right, but the teacher marks you wrong for one, saying you didn't use the technique taught in your textbooks.</span><br><span class="introduce-decision">You did receive an A, but you can...</span><br><div class="choice"><button class="decision" id="talk" value="0">Talk to your teacher about your grade</button>${htmlOr}<button class="decision" id="go-home" value="1">Just go home</button></div>`],
-[[[[], [], [`words`]], [], 
-`<span class="story">&emsp;&emsp;You walk over to the kid and throw a punch. He's taken off his guard and you hit him square in the face. He stumbles back, before throwing a punch of his own. After a bit more back and forth, you get up and he stays down. You walk home slowly, wiping the mud off your pants. When you get home, your mom cleans up your wounds, and asks what happens. You tell her the story and she nods sadly. She says she's proud you stood up for yourself, but she urges you not to interact next time. You learn that you'll never be treated as an equal here, and that there's no good way to fight back. Eugene also fought a few bullies as a kid, and learned a similar lesson.</span><br><div class="choice"><button class="decision" id="next" value="0">7 years later...</button></div>`], 
-[[[], [], [`words`]], [], 
-`<span class="story">&emsp;&emsp;You ignore the kid and keep playing. He yells again, louder this time, "Heeeyy, YiiIIidDD!!" You don't react and he yells at you again, and again. You don't pay him any mind, and he eventually gets bored and leaves. You go home soon after, thinking about the way you're being treated and the fact that it won't get any better while you live here.</span><br><div class="choice"><button class="decision" id="next" value="0">7 years later...</button></div>`], 
-`<span class="story">&emsp;&emsp;You decide to go to the marshy creek area by your home - just as Eugene did on many occasions. You walk into the clearing and hear the sounds you've become accustomed to: frogs croaking, birds chirping, the amount and loudnees of the nature is astounding, yet calming. You find your friends and begin chasing each other around, climbing trees, when you hear a kid yell from behind, "Hey, YiIidDd!".</span><br><span class="introduce-decision">You whip your head around and realize you know this kid. He's bullied you and the other Jews in your class before. You...</span><br><div class="choice"><button class="decision" id="fight" value="0">Walk over and stand up to him</button>${htmlOr}<button class="decision" id="ignore" value="1">Ignore him and keep playing</button></div>`], 
+const eugeneStories = [[[[[[[[], [], [`<span class="story">&emsp;&emsp;You agree to help him, and read up on how to use punch cards and basic algorighms to program the computer. Every day, your friend asks your coworkers seemingly innocous questions that show a true approval rating of the regime when put together. Instead of asking if people agree with the Party's policies, he asks how they feel about the price of vodka and how well they think the stores are stocked. You take his results, put them into your program, and the results show just what you'd expected: not even the well-payed workers support the Party.<br><&emsp;&emsp;Eventually you save up enough money to buy a personal computer, and you start programming in C and C++. Now you can get graphical representations and charts of the statistics. You continue to work in the factory, but you feel like something's missing.</span><br><div class="choice"><button class="decision" id="next" value="0">6-7 years later...</button></div>`]], [], 
+`<span class="story">&emsp;&emsp;You approach the department head about joining the doctorate program, but he tells you that the university's post-graduate courses aren't available to Jews. Instead, you're forced to find a job at a factory that manufactures equipment for nuclear power plants. You work as an engineer, but thanks to the Soviet ideology you're paid about 1/3 of what the assembly line workers make. You meet a co-worker with an interest in psychology, and he tells you about an experiment he wants to conduct.</span><br><span class="introduce-decision">He wants to conduct some polls about living conditions for the workers, and he wants you to help him program the big factory computer to analyze the results. Will you...</span><br><div class="choice"><button class="decision" id="poll" value="0">Agree to help him</button>${htmlOr}<button class="decision" id="refuse" value="1">Refuse to help him</button>`], 
+  [[], [], `<span class="story">&emsp;&emsp;You try to get a job immediately, and find one at an old factory that makes artillery shells. It's dangerous work and you aren't paid very well, but you stick with it. 40 years later, you'll wake up, and realize that this is where it all went wrong.</span><br><span class="intermission"><em>You failed to get out...</em></span><br><center><span class="story">Refresh the page to start over or <a href="about/eugene.html" id="in-text">learn more about Eugene</a></span>`], 
+`<span class="story">&emsp;&emsp;You apply to Leningrad Politechnika instead, one of the few universities open to Jewish students. You are accepted into the university and exempted from the draft. You begin studying physics and engineering, and become friendly with the other Jews in your classes, and even with the head of the school of engineering. You work hard and learn a lot, and are at the top of your class by graduation.</span><br><span class="introduce-decision">Now you can...</span><br><div class="choice"><button class="decision" id="phd" value="0">Try to get a PhD</button>${htmlOr}<button class="decision" id="work" value="1">Get a job right after graduation</button></div>`], 
+[[], [], `<span class="story">You decide it's not worth trying to get into another university and join the military. You drift around the country, working out of different bases. You rarely see active combat, and your childhood ambitions of recognition and oppurtinity are dashed.</span><br><span class="intermission"><em>You failed to get out...</em></span><br><center><span class="story">Refresh the page to start over or <a href="about/eugene.html" id="in-text">learn more about Eugene</a></span>`], 
+`<span class="intermission"><em>7 years pass, and you're now in your final year of high school</em></span><br><span class="story">&emsp;&emsp;If you can't get into a college that will give you a deferral, you'll be drafted into the military just like your father was. Your sister is already studying at Leningrad Polytechnika, but you've been called to Leningrad University for your acceptance test and interview. When you arrive, you're taken into a room, and given a series of questions. You struggle to answer most of them, and this is no accident. Many Soviet universities have a different set of questions to ask Jewish applicants to prevent them from getting in.</span><br><span class="introduce-decision">You're frustrated at this unfairness, and decide to...</span><br><div class="choice"><button class="decision" id="apply" value="0">Apply to Polytechnika to get an education and avoid the draft</button>${htmlOr}<button class="decision" id="military" value="1">Go into the military</button></div>`], [], 
+`<span class="story">&emsp;&emsp;You approach the teacher about your unfair grade. She refuses to amend it, telling you that you have to follow the government methods. You go home having learned two valuable lessons: everything you do here will be dictated by the government, and it will always be harder for you as a Jew.</span><br><div class="choice"><button class="decision" id="next" value="000">7 years later...</button></div>`], 
+[[], [], 
+`<span class="story">&emsp;&emsp;You decide it's not worth the fight and go home, A in hand. You meet with your mom, and she tells you that she's proud of you, that you did all you could. You know she's right, but you still toss and turn that night, thinking how hard it is for you here. You set your mind on making it to a place where you can make a name for yourself and be recognized for your achievements.</span><br><div class="choice"><button class="decision" id="next" value="000">7 years later...</button></div>`], 
+`<span class="story">&emsp;&emsp;You decide to bear down and study hard to make sure you get every question right. After all, your mother often tells you, "As a Jew, you have to earn an A+ to get an A!"<br>&emsp;&emsp;Lo and behold, the day of the test comes around and you ace it. You get every answer right, but the teacher marks you wrong for one, saying you didn't use the technique taught in your textbooks.</span><br><span class="introduce-decision">You did receive an A, but you can...</span><br><div class="choice"><button class="decision" id="talk" value="0">Talk to your teacher about your grade</button>${htmlOr}<button class="decision" id="go-home" value="1">Just go home</button></div>`],
+[[[], [], 
+`<span class="story">&emsp;&emsp;You walk over to the kid and throw a punch. He's taken off his guard and you hit him square in the face. He stumbles back, before throwing a punch of his own. After a bit more back and forth, you get up and he stays down. You walk home slowly, wiping the mud off your pants. When you get home, your mom cleans up your wounds, and asks what happens. You tell her the story and she nods sadly. She says she's proud you stood up for yourself, but she urges you not to interact next time. You learn that you'll never be treated as an equal here, and that there's no good way to fight back.</span><br><div class="choice"><button class="decision" id="next" value="000">7 years later...</button></div>`], 
+[[], [], 
+`<span class="story">&emsp;&emsp;You ignore the kid and keep playing. He yells again, louder this time, "Heeeyy, YiiIIidDD!!" You don't react and he yells at you again, and again. You don't pay him any mind, and he eventually gets bored and leaves. You go home soon after, thinking about the way you're being treated and the fact that it won't get any better while you live here.</span><br><div class="choice"><button class="decision" id="next" value="000">7 years later...</button></div>`], 
+`<span class="story">&emsp;&emsp;You decide to go to the marshy creek area by your home. You walk into the clearing and hear the sounds you've become accustomed to: frogs croaking, birds chirping, the volume of the natural world is astounding, yet calming. You find your friends and begin chasing each other around, climbing trees, when you hear a kid yell from behind, "Hey, YiIidDd!".</span><br><span class="introduce-decision">You whip your head around and realize you know this kid. He's bullied you and the other Jews in your class before. You...</span><br><div class="choice"><button class="decision" id="fight" value="0">Walk over and stand up to him</button>${htmlOr}<button class="decision" id="ignore" value="1">Ignore him and keep playing</button></div>`], 
 `<span class="story">&emsp;&emsp;Welcome to the great USSR! The year is 1971, and you just turned 10 in Brest, Belarus, a military city of about 200,000 near the Polish border. You were born on a military base, and most of what you do is monitored and dictated by the government. Additionally, as a Jew, you're further discriminated against by schoolmates and teachers. Your teacher tells you that you have a math test coming up, and you're confident you can get a good grade on it.</span><br><span class="introduce-decision">You have some freetime in the afternoon, will you...</span><br><div class="choice"><button class="decision" id="study" value="0">Study for the test</button>${htmlOr}<button class="decision" id="play" value="1">Walk to the creek and play with your friends</button></div>`]
 const storyField = document.querySelector('div.story-field')
 
@@ -41,7 +46,6 @@ function play_eugene_game() {
     nextStory = get_story(currentStoryId, eugeneStories)
     document.getElementById(`${currentStoryId.length - 1}`).style.color = 'grey'
     storyField.innerHTML += nextStory
-
     const talkChoice = document.getElementById('talk')
     talkChoice.addEventListener('click', function () {
       currentStoryId.push(Number(talkChoice.value))
@@ -50,10 +54,48 @@ function play_eugene_game() {
       storyField.innerHTML += nextStory
       const nextButton = document.getElementById('next')
       nextButton.addEventListener('click', function () {
-        currentStoryId.push(Number(nextButton.value))
+        currentStoryId = []
+        for (id of nextButton.value) {
+          currentStoryId.push(Number(id))
+        }
         nextStory = get_story(currentStoryId, eugeneStories)
         document.getElementById(`${currentStoryId.length - 1}`).style.color = 'grey'
         storyField.innerHTML += nextStory
+        const collegeChoice = document.getElementById('apply')
+        collegeChoice.addEventListener('click', function () {
+          currentStoryId.push(Number(collegeChoice.value))
+          nextStory = get_story(currentStoryId, eugeneStories)
+          document.getElementById(`${currentStoryId.length - 1}`).style.color = 'grey'
+          storyField.innerHTML += nextStory
+          const phdChoice = document.getElementById('phd')
+          phdChoice.addEventListener('click', function () {
+            currentStoryId.push(Number(phdChoice.value))
+            nextStory = get_story(currentStoryId, eugeneStories)
+            document.getElementById(`${currentStoryId.length - 1}`).style.color = 'grey'
+            storyField.innerHTML += nextStory
+            const pollChoice = document.getElementById('poll')
+            pollChoice.addEventListener('click', function () {
+              currentStoryId.push(Number(pollChoice.value))
+              nextStory = get_story(currentStoryId, eugeneStories)
+              document.getElementById(`${currentStoryId.length - 1}`).style.color = 'grey'
+              storyField.innerHTML += nextStory
+            })
+          })
+          const workChoice = document.getElementById('work')
+          workChoice.addEventListener('click', function () {
+            currentStoryId.push(Number(workChoice.value))
+            nextStory = get_story(currentStoryId, eugeneStories)
+            document.getElementById(`${currentStoryId.length - 1}`).style.color = 'grey'
+            storyField.innerHTML += nextStory
+          })
+        })
+        const enlistChoice = document.getElementById('military')
+        enlistChoice.addEventListener('click', function () {
+          currentStoryId.push(Number(enlistChoice.value))
+          nextStory = get_story(currentStoryId, eugeneStories)
+          document.getElementById(`${currentStoryId.length - 1}`).style.color = 'grey'
+          storyField.innerHTML += nextStory
+        })
       })
     })
 
@@ -65,10 +107,48 @@ function play_eugene_game() {
       storyField.innerHTML += nextStory
       const nextButton = document.getElementById('next')
       nextButton.addEventListener('click', function () {
-        currentStoryId.push(Number(nextButton.value))
+        currentStoryId = []
+        for (id of nextButton.value) {
+          currentStoryId.push(Number(id))
+        }
         nextStory = get_story(currentStoryId, eugeneStories)
         document.getElementById(`${currentStoryId.length - 1}`).style.color = 'grey'
         storyField.innerHTML += nextStory
+        const collegeChoice = document.getElementById('apply')
+        collegeChoice.addEventListener('click', function () {
+          currentStoryId.push(Number(collegeChoice.value))
+          nextStory = get_story(currentStoryId, eugeneStories)
+          document.getElementById(`${currentStoryId.length - 1}`).style.color = 'grey'
+          storyField.innerHTML += nextStory
+          const phdChoice = document.getElementById('phd')
+          phdChoice.addEventListener('click', function () {
+            currentStoryId.push(Number(phdChoice.value))
+            nextStory = get_story(currentStoryId, eugeneStories)
+            document.getElementById(`${currentStoryId.length - 1}`).style.color = 'grey'
+            storyField.innerHTML += nextStory
+            const pollChoice = document.getElementById('poll')
+            pollChoice.addEventListener('click', function () {
+              currentStoryId.push(Number(pollChoice.value))
+              nextStory = get_story(currentStoryId, eugeneStories)
+              document.getElementById(`${currentStoryId.length - 1}`).style.color = 'grey'
+              storyField.innerHTML += nextStory
+            })
+          })
+          const workChoice = document.getElementById('work')
+          workChoice.addEventListener('click', function () {
+            currentStoryId.push(Number(workChoice.value))
+            nextStory = get_story(currentStoryId, eugeneStories)
+            document.getElementById(`${currentStoryId.length - 1}`).style.color = 'grey'
+            storyField.innerHTML += nextStory
+          })
+        })
+        const enlistChoice = document.getElementById('military')
+        enlistChoice.addEventListener('click', function () {
+          currentStoryId.push(Number(enlistChoice.value))
+          nextStory = get_story(currentStoryId, eugeneStories)
+          document.getElementById(`${currentStoryId.length - 1}`).style.color = 'grey'
+          storyField.innerHTML += nextStory
+        })
       })
     })
   })
@@ -79,7 +159,6 @@ function play_eugene_game() {
     nextStory = get_story(currentStoryId, eugeneStories)
     document.getElementById(`${currentStoryId.length - 1}`).style.color = 'grey'
     storyField.innerHTML += nextStory
-
     const fightChoice = document.getElementById('fight')
     fightChoice.addEventListener('click', function () {
       currentStoryId.push(Number(fightChoice.value))
@@ -88,10 +167,48 @@ function play_eugene_game() {
       storyField.innerHTML += nextStory
       const nextButton = document.getElementById('next')
       nextButton.addEventListener('click', function () {
-        currentStoryId.push(Number(nextButton.value))
+        currentStoryId = []
+        for (id of nextButton.value) {
+          currentStoryId.push(Number(id))
+        }
         nextStory = get_story(currentStoryId, eugeneStories)
         document.getElementById(`${currentStoryId.length - 1}`).style.color = 'grey'
         storyField.innerHTML += nextStory
+        const collegeChoice = document.getElementById('apply')
+        collegeChoice.addEventListener('click', function () {
+          currentStoryId.push(Number(collegeChoice.value))
+          nextStory = get_story(currentStoryId, eugeneStories)
+          document.getElementById(`${currentStoryId.length - 1}`).style.color = 'grey'
+          storyField.innerHTML += nextStory
+          const phdChoice = document.getElementById('phd')
+          phdChoice.addEventListener('click', function () {
+            currentStoryId.push(Number(phdChoice.value))
+            nextStory = get_story(currentStoryId, eugeneStories)
+            document.getElementById(`${currentStoryId.length - 1}`).style.color = 'grey'
+            storyField.innerHTML += nextStory
+            const pollChoice = document.getElementById('poll')
+            pollChoice.addEventListener('click', function () {
+              currentStoryId.push(Number(pollChoice.value))
+              nextStory = get_story(currentStoryId, eugeneStories)
+              document.getElementById(`${currentStoryId.length - 1}`).style.color = 'grey'
+              storyField.innerHTML += nextStory
+            })
+          })
+          const workChoice = document.getElementById('work')
+          workChoice.addEventListener('click', function () {
+            currentStoryId.push(Number(workChoice.value))
+            nextStory = get_story(currentStoryId, eugeneStories)
+            document.getElementById(`${currentStoryId.length - 1}`).style.color = 'grey'
+            storyField.innerHTML += nextStory
+          })
+        })
+        const enlistChoice = document.getElementById('military')
+        enlistChoice.addEventListener('click', function () {
+          currentStoryId.push(Number(enlistChoice.value))
+          nextStory = get_story(currentStoryId, eugeneStories)
+          document.getElementById(`${currentStoryId.length - 1}`).style.color = 'grey'
+          storyField.innerHTML += nextStory
+        })
       })
     })
 
@@ -103,10 +220,48 @@ function play_eugene_game() {
       storyField.innerHTML += nextStory
       const nextButton = document.getElementById('next')
       nextButton.addEventListener('click', function () {
-        currentStoryId.push(Number(nextButton.value))
+        currentStoryId = []
+        for (id of nextButton.value) {
+          currentStoryId.push(Number(id))
+        }
         nextStory = get_story(currentStoryId, eugeneStories)
         document.getElementById(`${currentStoryId.length - 1}`).style.color = 'grey'
         storyField.innerHTML += nextStory
+        const collegeChoice = document.getElementById('apply')
+        collegeChoice.addEventListener('click', function () {
+          currentStoryId.push(Number(collegeChoice.value))
+          nextStory = get_story(currentStoryId, eugeneStories)
+          document.getElementById(`${currentStoryId.length - 1}`).style.color = 'grey'
+          storyField.innerHTML += nextStory
+          const phdChoice = document.getElementById('phd')
+          phdChoice.addEventListener('click', function () {
+            currentStoryId.push(Number(phdChoice.value))
+            nextStory = get_story(currentStoryId, eugeneStories)
+            document.getElementById(`${currentStoryId.length - 1}`).style.color = 'grey'
+            storyField.innerHTML += nextStory
+            const pollChoice = document.getElementById('poll')
+            pollChoice.addEventListener('click', function () {
+              currentStoryId.push(Number(pollChoice.value))
+              nextStory = get_story(currentStoryId, eugeneStories)
+              document.getElementById(`${currentStoryId.length - 1}`).style.color = 'grey'
+              storyField.innerHTML += nextStory
+            })
+          })
+          const workChoice = document.getElementById('work')
+          workChoice.addEventListener('click', function () {
+            currentStoryId.push(Number(workChoice.value))
+            nextStory = get_story(currentStoryId, eugeneStories)
+            document.getElementById(`${currentStoryId.length - 1}`).style.color = 'grey'
+            storyField.innerHTML += nextStory
+          })
+        })
+        const enlistChoice = document.getElementById('military')
+        enlistChoice.addEventListener('click', function () {
+          currentStoryId.push(Number(enlistChoice.value))
+          nextStory = get_story(currentStoryId, eugeneStories)
+          document.getElementById(`${currentStoryId.length - 1}`).style.color = 'grey'
+          storyField.innerHTML += nextStory
+        })
       })
     })
   })
