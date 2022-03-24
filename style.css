@@ -23,6 +23,9 @@ h3.intro {
   justify-content: center;
   font-size: 1.1em;
 }
+div.story-field {
+  margin-bottom: 50px;
+}
 div.start-buttons {
   display: flex;
   flex-direction: row;
