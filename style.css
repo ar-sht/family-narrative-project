@@ -23,6 +23,11 @@ h3.intro {
   justify-content: center;
   font-size: 1.1em;
 }
+span.disclaimer {
+  font-weight: 200;
+  font-size: 0.6em;
+  padding-bottom: 50px
+}
 div.start-buttons {
   display: flex;
   flex-direction: row;
@@ -75,6 +80,10 @@ div.story-field {
 span.story {
   font: 1.3em sans-serif;
   font-weight: 200;
+}
+span.big {
+  font-size: 1.4rem;
+  font-weight: 800;
 }
 span.introduce-decision {
   margin-top: 30px;

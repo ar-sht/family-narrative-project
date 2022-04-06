@@ -2,7 +2,7 @@ const htmlOr = `<span class="or"><em>or</em></span>`
 const eugeneStories = [[[[[[[[[[], [], `<span class="story">&emsp;&emsp;You choose not to leave. After all, this is the only home you've ever known and it seems inconceiveable to start over again. You stay and live out your life in Russia.</span><br><span class="intermission"><em>You- the goal was to get out, what's wrong with you?!?!</em></span><br><center><span class="story">Refresh the page to start over or <a href="about/eugene.html" id="in-text">learn more about Eugene</a></span>`], 
   [[], [], `<span class="story">&emsp;&emsp;You book a flight to New York. You're allowed to take one suitcase and $100 per person with you. You land in the US with $400, and after being processed by immigration you go to a store nearby to get some food. In the Soviet Union, bananas were incredibly rare, you've seen just one in your life. You walk into the store and see bunches of bananas everywhere. You're taken aback, and decide to buy some to give to your kids. You ask the owner how much they are in your very limited English, and he tells you five dollars, just over $10 today. You buy them and after you get out, you meet your friend who's lived here for some time, and he tells you that you were cheated. Here, you realize that some people will only take advantage of you. You're not out of the woods yet. You board your next flight to San Francisco, and when you arrive, you meet up with your sister and she introduces you to the local Jewish community. Here you get support and assistance in finding a home and a job. After a lot of hard work and dedication, you're fluent in English and working as a professor at Stanford University.</span><br><span class="intermission"><em>Congratulations! You took the path Eugene took, and made it to America!</em></span><br><center><span class="story">Refresh the page to start over or <a href="about/eugene.html" id="in-text">learn more about Eugene</a></span>`], 
 `<span class="intermission"><em>7 years later, and Gorbachev's Perestroika is in full effect</em></span><br><span class="story">&emsp;&emsp;You got married in ____, and you have two young children. Thanks to Perestroika's immigration policies, your sister tries to move to the US with her son, and after living in refugee camps in Austria and Italy for nearly a year, they get a visa and move to San Francisco, California. After seeing them leave, you decide to begin the immigration process yourself. Unfortunately, for a woman (as an adult) to leave the Soviet Union, both her parents must agree to it. This is a problem, because your wife's parents got divorced when she was very young, and her dad hasn't been a part of her life. You eventually track him down, and you're able to leave after almost 2 years.</span><br><span class="introduce-decision">You have the chance, it's now or never, will you...</span><br><div class="choice"><button class="decision" id="stay" value="0">Stay</button>${htmlOr}<button class="decision" id="leave" value="1">Leave</button></div>`], 
-[], `<span class="story">&emsp;&emsp;You agree to help him, and read up on how to use punch cards and basic algorighms to program the computer. Every day, your friend asks your coworkers seemingly innocous questions that show a true approval rating of the regime when put together. Instead of asking if people agree with the Party's policies, he asks how they feel about the price of vodka and how well they think the stores are stocked. You take his results, put them into your program, and the results show just what you'd expected: not even the well-payed workers support the Party.<br>&emsp;&emsp;Eventually you save up enough money to buy a personal computer, and you start programming in C and C++. Now you can get graphical representations and charts of the statistics. You continue to work in the factory, but you feel like something's missing.</span><br><div class="choice"><button class="decision" id="next" value="0000000">7 years later...</button></div>`], 
+[], `<span class="story">&emsp;&emsp;You agree to help him, and read up on how to use punch cards and basic algorithms to program the computer. Every day, your friend asks your coworkers seemingly innocous questions that show a true approval rating of the regime when put together. Instead of asking if people agree with the Party's policies, he asks how they feel about the price of vodka and how well they think the stores are stocked. You take his results, put them into your program, and the results show just what you'd expected: not even the well-payed workers support the Party.<br>&emsp;&emsp;Eventually you save up enough money to buy a personal computer, and you start programming in C and C++. Now you can get graphical representations and charts of the statistics. You continue to work in the factory, but you feel like something's missing.</span><br><div class="choice"><button class="decision" id="next" value="0000000">7 years later...</button></div>`], 
   [[], [], `<span class="story">&emsp;&emsp;You decide not to risk helping him - you could get in trouble with the government after all, and instead continue working. Years later as you try to immigrate to the US, you're refused a visa because you don't have enough applicable skills. If only you'd learned how to program with your friend so many years ago.</span><br><span class="intermission"><em>You failed to get out...</em></span><br><center><span class="story">Refresh the page to start over or <a href="about/eugene.html" id="in-text">learn more about Eugene</a></span>`], 
 `<span class="story">&emsp;&emsp;You approach the department head about joining the doctorate program, but he tells you that the university's post-graduate courses aren't available to Jews. Instead, you're forced to find a job at a factory that manufactures equipment for nuclear power plants. You work as an engineer, but you're only paid about 1/3 of what the assembly line workers make. You meet a co-worker with an interest in psychology, and he tells you about an experiment he wants to conduct.</span><br><span class="introduce-decision">He wants to poll some of the workers about their living conditions, and he wants you to help him program the big factory computer to analyze the results. Will you...</span><br><div class="choice"><button class="decision" id="poll" value="0">Agree to help him</button>${htmlOr}<button class="decision" id="refuse" value="1">Refuse to help him</button>`], 
   [[], [], `<span class="story">&emsp;&emsp;You look for a job and find one at a factory that manufactures equipment for nuclear power plants. You work as an engineer, but you're only paid about 1/3 of what the assembly line workers make. You meet a co-worker with an interest in psychology, and he tells you about an experiment he wants to conduct.</span><br><span class="introduce-decision">He wants to poll some of the workers about their living conditions, and he wants you to help him program the big factory computer to analyze the results. Will you...</span><br><div class="choice"><button class="decision" id="poll" value="000000">Agree to help him</button>${htmlOr}<button class="decision" id="refuse" value="000001">Refuse to help him</button>`],
@@ -20,7 +20,12 @@ const eugeneStories = [[[[[[[[[[], [], `<span class="story">&emsp;&emsp;You choo
 `<span class="story">&emsp;&emsp;You decide to go to the marshy creek area by your home. You walk into the clearing and hear the sounds you've become accustomed to: frogs croaking, birds chirping, the volume of the natural world is astounding, yet calming. You find your friends and begin chasing each other around, climbing trees, when you hear a kid yell from behind, "Hey, YiIidDd!".</span><br><span class="introduce-decision">You whip your head around and realize you know this kid. He's bullied you and the other Jews in your class before. You...</span><br><div class="choice"><button class="decision" id="fight" value="0">Walk over and stand up to him</button>${htmlOr}<button class="decision" id="ignore" value="1">Ignore him and keep playing</button></div>`], 
 `<span class="story">&emsp;&emsp;Welcome to the great USSR! The year is 1971, and you just turned 10 in Brest, Belarus, a military city of about 200,000 near the Polish border. You were born on a military base, and most of what you do is monitored and dictated by the government. Additionally, as a Jew, you're further discriminated against by schoolmates and teachers. Your teacher tells you that you have a math test coming up, and you're confident you can get a good grade on it.</span><br><span class="introduce-decision">You have some freetime in the afternoon, will you...</span><br><div class="choice"><button class="decision" id="study" value="0">Study for the test</button>${htmlOr}<button class="decision" id="play" value="1">Walk to the creek and play with your friends</button></div>`]
 
-const nataStories = [[], [], `words`]
+const nataStories = [[[[], [], 
+`<span class="story">&emsp;&emsp;The squeal of the bus's brakes wake you up. You sit up and look out the window. You see tents and buses on a backdrop of gothic architecture and mountains. The date is April 30, and you're in Vienna! You and your son walk off the bus and into one of the humanitarian group's tents.`], [], 
+`<span class="story">&emsp;&emsp;You decide to begin the immigration process. You hope you're accepted and your son doesn't have to go into the military, and instead you can make a better life for him abroad. You're only allowed to immigrate to your 'ethnic homeland', which is Israel for Jews, so that's what you put on the form, when really you'll be going to the US to be with your relatives.<br><br>&emsp;&emsp;After about a year, a message from the government arrives in the mail. You open it nervously, and read the header, <span class="big"><em>"YOUR APPLICATION HAS BEEN APPROVED"</em></span> it says in big, black letters. You pay the fee to revoke your citizenship (you can only afford it thanks to money your relatives sent you), you prepare to leave, and sell all your furniture, as you can't take it with you. You go to the Dutch Embassy and leave your proof of education and other important papers, and board a bus for Vienna with just $300 and 3 suitcases, mostly items to sell later on.</span><br><div class="choice"><button class="decision" id="bus" value="0">One long bus ride later...</button></div>`], 
+[[], [], 
+`<span class="story">&emsp;&emsp;You choose not to risk your job - your livelihood really - on a chance of immigration. When your son turns 17 he is drafted into the Russian army and he fights for two years in the First Chechen War. He tries to get into a university after, but his PTSD and Jewish ethnicity prevent him from doing so. He gets a job on an assembly line and is paid badly. You keep working as a teacher for terrible wages, and never again find the opportunity to move.</span><br><span class="intermission"><em>You failed to get out...</em></span><br><center><span class="story">Refresh the page to start over or <a href="about/nata.html" id="in-text">learn more about Nata and Max</a></span>`], 
+`<span class="story">&emsp;&emsp;The year is 1987. Gorbachev's Perestroika is in full effect, and your cousin who had immigrated to the US comes to visit you for the first time since. He tells you that his life is much better in the US, and that he can help you get a visa and a place to live if you try to immigrate. You hesitate. You've lived in the Soviet Union your whole life, and even applying for immigration is dangerous. If denied, you'd be blackballed by employers, and you barely make enough money as is. Then again, you've faced so much injustice growing up, and your son, Max, will be drafted into the army in a few years if you stay.</span><br><span class="introduce-decision">Will you...</span><br><div class="choice"><button class="decision" id="immigrate" value="0">Apply to immigrate</button>${htmlOr}<button class="decision" id="not-go" value="1">Not take the risk and stay</button></div>`]
 
 const storyField = document.querySelector('div.story-field')
 
@@ -46,7 +51,6 @@ function play_eugene_game() {
   let currentStoryId = []
   let nextStory = get_story(currentStoryId, eugeneStories)
   storyField.innerHTML += nextStory
-
   const studyChoice = document.getElementById('study')
   studyChoice.addEventListener('click', function () {
     currentStoryId.push(Number(studyChoice.value))
@@ -595,7 +599,36 @@ function play_eugene_game() {
   })
 }
 
-document.querySelector('button#eugene-start').onclick = function () {
+function play_nata_game() {
+  let currentStoryId = []
+  let nextStory = get_story(currentStoryId, nataStories)
+  storyField.innerHTML += nextStory
+  const immigrateChoice = document.getElementById('immigrate')
+  immigrateChoice.addEventListener('click', function () {
+    console.log(this)                           
+    currentStoryId.push(Number(immigrateChoice.value))
+    nextStory = get_story(currentStoryId, nataStories)
+    document.getElementById(`${currentStoryId.length - 1}`).style.color = 'grey'
+    storyField.innerHTML += nextStory
+    const busButton = document.getElementById('bus')
+    busButton.addEventListener('click', function () {
+      currentStoryId.push(Number(busButton.value))
+      nextStory = get_story(currentStoryId, nataStories)
+      document.getElementById(`${currentStoryId.length - 1}`).style.color = 'grey'
+      storyField.innerHTML += nextStory
+    })
+  })
+  const notGoChoice = document.getElementById('not-go')
+  notGoChoice.addEventListener('click', function () {
+    currentStoryId.push(Number(notGoChoice.value))
+    nextStory = get_story(currentStoryId, nataStories)
+    document.getElementById(`${currentStoryId.length - 1}`).style.color = 'grey'
+    storyField.innerHTML += nextStory
+
+  })
+}
+
+document.querySelector('button#eugene-start').addEventListener('click', function () {
   for (let element of document.querySelectorAll('span.info')) {
     element.remove()
   }
@@ -604,4 +637,16 @@ document.querySelector('button#eugene-start').onclick = function () {
   }
   document.querySelector('header').remove()
   play_eugene_game()
-}
+  document.querySelector('button#eugene-start').removeEventListener()
+})
+
+document.querySelector('button#nata-start').addEventListener('click', function () {
+  for (let element of document.querySelectorAll('span.info')) {
+    element.remove()
+  }
+  for (let element of document.querySelectorAll('button.start')) {
+    element.remove()
+  }
+  document.querySelector('header').remove()
+  play_nata_game()
+})
