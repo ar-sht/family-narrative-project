@@ -99,9 +99,6 @@ function play_eugene_game() {
                 nextStory = get_story(currentStoryId, eugeneStories)
                 document.getElementById(`${currentStoryId.length - 1}`).style.color = 'grey'
                 storyField.innerHTML += nextStory
-                nextStory = get_story(currentStoryId, eugeneStories)
-                document.getElementById(`${currentStoryId.length - 1}`).style.color = 'grey'
-                storyField.innerHTML += nextStory
                 const stayChoice = document.getElementById('stay')
                 stayChoice.addEventListener('click', function () {
                   currentStoryId.push(Number(stayChoice.value))
@@ -230,9 +227,6 @@ function play_eugene_game() {
                 nextStory = get_story(currentStoryId, eugeneStories)
                 document.getElementById(`${currentStoryId.length - 1}`).style.color = 'grey'
                 storyField.innerHTML += nextStory
-                nextStory = get_story(currentStoryId, eugeneStories)
-                document.getElementById(`${currentStoryId.length - 1}`).style.color = 'grey'
-                storyField.innerHTML += nextStory
                 const stayChoice = document.getElementById('stay')
                 stayChoice.addEventListener('click', function () {
                   currentStoryId.push(Number(stayChoice.value))
@@ -278,9 +272,6 @@ function play_eugene_game() {
                 for (id of nextButton.value) {
                   currentStoryId.push(Number(id))
                 }
-                nextStory = get_story(currentStoryId, eugeneStories)
-                document.getElementById(`${currentStoryId.length - 1}`).style.color = 'grey'
-                storyField.innerHTML += nextStory
                 nextStory = get_story(currentStoryId, eugeneStories)
                 document.getElementById(`${currentStoryId.length - 1}`).style.color = 'grey'
                 storyField.innerHTML += nextStory
@@ -371,9 +362,6 @@ function play_eugene_game() {
                 nextStory = get_story(currentStoryId, eugeneStories)
                 document.getElementById(`${currentStoryId.length - 1}`).style.color = 'grey'
                 storyField.innerHTML += nextStory
-                nextStory = get_story(currentStoryId, eugeneStories)
-                document.getElementById(`${currentStoryId.length - 1}`).style.color = 'grey'
-                storyField.innerHTML += nextStory
                 const stayChoice = document.getElementById('stay')
                 stayChoice.addEventListener('click', function () {
                   currentStoryId.push(Number(stayChoice.value))
@@ -419,9 +407,6 @@ function play_eugene_game() {
                 for (id of nextButton.value) {
                   currentStoryId.push(Number(id))
                 }
-                nextStory = get_story(currentStoryId, eugeneStories)
-                document.getElementById(`${currentStoryId.length - 1}`).style.color = 'grey'
-                storyField.innerHTML += nextStory
                 nextStory = get_story(currentStoryId, eugeneStories)
                 document.getElementById(`${currentStoryId.length - 1}`).style.color = 'grey'
                 storyField.innerHTML += nextStory
@@ -505,9 +490,6 @@ function play_eugene_game() {
                 nextStory = get_story(currentStoryId, eugeneStories)
                 document.getElementById(`${currentStoryId.length - 1}`).style.color = 'grey'
                 storyField.innerHTML += nextStory
-                nextStory = get_story(currentStoryId, eugeneStories)
-                document.getElementById(`${currentStoryId.length - 1}`).style.color = 'grey'
-                storyField.innerHTML += nextStory
                 const stayChoice = document.getElementById('stay')
                 stayChoice.addEventListener('click', function () {
                   currentStoryId.push(Number(stayChoice.value))
@@ -553,9 +535,6 @@ function play_eugene_game() {
                 for (id of nextButton.value) {
                   currentStoryId.push(Number(id))
                 }
-                nextStory = get_story(currentStoryId, eugeneStories)
-                document.getElementById(`${currentStoryId.length - 1}`).style.color = 'grey'
-                storyField.innerHTML += nextStory
                 nextStory = get_story(currentStoryId, eugeneStories)
                 document.getElementById(`${currentStoryId.length - 1}`).style.color = 'grey'
                 storyField.innerHTML += nextStory

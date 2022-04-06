@@ -28,6 +28,9 @@ span.disclaimer {
   font-size: 0.6em;
   padding-bottom: 50px
 }
+div.story-field {
+  margin-bottom: 50px;
+}
 div.start-buttons {
   display: flex;
   flex-direction: row;
