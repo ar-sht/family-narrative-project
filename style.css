@@ -5,6 +5,7 @@ header {
   color: rgb(41, 34, 34);
   padding: 1% 2%;
   margin-bottom: 50px;
+  text-align: center;
 }
 h1.title {
   font-weight: 500;
